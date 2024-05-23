@@ -72,7 +72,7 @@ indexed.
 [Read_ref][Read_ref]
 
   This application showcases the read and access of header data. It shows
-  all reference names which has length equal or greather to given input.
+  all reference names which has length equal or greater to given input.
 
 [Read_bam][Read_bam]
 
@@ -144,7 +144,7 @@ indexed.
 
 [Read_multireg][Read_multireg]:
 
-  This application showcases the usage of mulitple region specification in
+  This application showcases the usage of multiple region specification in
   alignment read.
 
 [Pileup][Pileup]:

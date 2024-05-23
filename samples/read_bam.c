@@ -24,7 +24,7 @@ DEALINGS IN THE SOFTWARE
 
 */
 
-/* The pupose of this code is to demonstrate the library apis and need proper error handling and optimization */
+/* The purpose of this code is to demonstrate the library apis and need proper error handling and optimization */
 
 #include <getopt.h>
 #include <unistd.h>
@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
         }
         printf("\nQUAL: ");
         for (int i = 0; i < bamdata->core.l_qseq ; ++i) {
-            printf("%c", bam_get_qual(bamdata)[i]+33);                                  //retrives the quality value
+            printf("%c", bam_get_qual(bamdata)[i]+33);                                  //retrieves the quality value
         }
         printf("\n\n");
     }

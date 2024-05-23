@@ -2066,7 +2066,7 @@ typedef struct bam_mplp_s *bam_mplp_t;
      * @param ins     the kstring where the insertion sequence will be written
      * @param del_len location for deletion length
      * @return the number of insertion string on success, with string length
-     *         being accessable via ins->l; -1 on failure.
+     *         being accessible via ins->l; -1 on failure.
      *
      * Fills out the kstring with the padded insertion sequence for the current
      * location in 'p'.  If this is not an insertion site, the string is blank.
@@ -2167,7 +2167,7 @@ described in "Improving SNP discovery by base alignment quality", Heng Li,
 Bioinformatics, Volume 27, Issue 8 (https://doi.org/10.1093/bioinformatics/btr076).
 
 The @param flag value can be generated using the htsRealnFlags enum, but for
-backwards compatibilty reasons is retained as an "int".  An example usage
+backwards compatibility reasons is retained as an "int".  An example usage
 of the enum could be this, equivalent to flag 19:
 
     sam_prob_realn(b, ref, len, BAQ_APPLY | BAQ_EXTEND | BAQ_PACBIOCCS);
@@ -2342,7 +2342,7 @@ int bam_next_basemod(const bam1_t *b, hts_base_mod_state *state,
  * @return The number of modifications found on success,
  *         -1 on failure.
  *
- * Note if called multipled times, qpos must be higher than the previous call.
+ * Note if called multiplied times, qpos must be higher than the previous call.
  * Hence this is suitable for use from a pileup iterator.  If more random
  * access is required, bam_parse_basemod must be called each time to reset
  * the state although this has an efficiency cost.

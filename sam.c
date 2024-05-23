@@ -538,7 +538,7 @@ int bam_set1(bam1_t *bam,
     // documentation for the bam1_t struct.
     size_t qname_nuls = 4 - l_qname % 4;
 
-    // the aligment length, needed for bam_reg2bin(), is calculated as in bam_endpos().
+    // the alignment length, needed for bam_reg2bin(), is calculated as in bam_endpos().
     // can't use bam_endpos() directly as some fields not yet set up.
     hts_pos_t rlen = 0, qlen = 0;
     if (!(flag & BAM_FUNMAP)) {
@@ -5532,7 +5532,7 @@ static inline int resolve_cigar2(bam_pileup1_t *p, hts_pos_t pos, cstate_t *s)
  * This variant handles base modifications, but only when "m" is non-NULL.
  *
  * Returns the number of inserted base on success, with string length being
- *        accessable via ins->l;
+ *        accessible via ins->l;
  *        -1 on failure.
  */
 int bam_plp_insertion_mod(const bam_pileup1_t *p,

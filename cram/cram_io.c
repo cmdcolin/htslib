@@ -762,7 +762,7 @@ static int itf8_size(int64_t v) {
 
 // Local interface to varint.h inline version, so we can use in func ptr.
 // Note a lot of these use the unsigned interface but take signed int64_t.
-// This is because the old CRAM ITF8 inteface had signed -1 as unsigned
+// This is because the old CRAM ITF8 interface had signed -1 as unsigned
 // 0xffffffff.
 static int uint7_size(int64_t v) {
     return var_size_u64(v);
@@ -1059,7 +1059,7 @@ int int32_put_blk(cram_block *b, int32_t val) {
 #ifdef HAVE_LIBDEFLATE
 /* ----------------------------------------------------------------------
  * libdeflate compression code, with interface to match
- * zlib_mem_{in,de}flate for simplicity elsewhere.
+ * zlib_mem_{in,de}flat for simplicity elsewhere.
  */
 
 // Named the same as the version that uses zlib as we always use libdeflate for
@@ -2126,7 +2126,7 @@ int cram_compress_block2(cram_fd *fd, cram_slice *s,
                     1.05, // 8  tok3 (rans)
                     1.00, 1.00, // 9,10 reserved
 
-                    // Paramterised versions of above
+                    // Parameterised versions of above
                     1.01, // gzip rle
                     1.01, // gzip -1
 

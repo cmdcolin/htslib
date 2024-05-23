@@ -97,7 +97,7 @@ files.
 Read_reg - This application showcases the usage of region specification in
 alignment read.
 
-Read_multireg - This application showcases the usage of mulitple regionn
+Read_multireg - This application showcases the usage of multiple regionn
 specification in alignment read.
 
 Pileup - This application showcases the pileup api, where all alignments
@@ -476,7 +476,7 @@ indexing the seq_nt16_str array.
         for (i = 0; i < bamdata->core.l_qseq ; ++i) {       //sequence length
             printf("%c", seq_nt16_str[bam_seqi(data, i)]);  //retrieves the base from (internal compressed) sequence data
         ...
-            printf("%c", bam_get_qual(bamdata)[i]+33);      //retrives the quality value
+            printf("%c", bam_get_qual(bamdata)[i]+33);      //retrieves the quality value
         ...
 Refer: read_bam.c
 

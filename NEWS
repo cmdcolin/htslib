@@ -403,7 +403,7 @@ Bug fixes
   requesting a deleted item via bcf_hdr_get_hrec() returning a stale pointer.
   (PR#1637)
 
-* Stop the gzip decompresser from finishing prematurely when an empty
+* Stop the gzip decompressor from finishing prematurely when an empty
   gzip block is followed by more data. (PR#1643, PR#1646)
 
 Noteworthy changes in release 1.17 (21st February 2023)
@@ -462,7 +462,7 @@ Noteworthy changes in release 1.17 (21st February 2023)
   be getting consistent results.
   (PR#1552, fixes the last remaining part of samtools#139)
 
-* Update the API documentation for bgzf_mt as it refered to a previous
+* Update the API documentation for bgzf_mt as it referred to a previous
   iteration.
   (PR#1556, fixes #1553.  Reported by Raghavendra Padmanabhan)
 
